@@ -1,0 +1,49 @@
+body {  background-image: url("food.png");
+        text-align: center;
+}
+
+li {  padding: 5px;
+      margin: 5px;
+      background:  aqua;
+      border-radius: 30px;
+      list-style-type: none;
+  }
+  
+h1 {  background-color: rgba(240, 70, 9, 0.603);
+      color: white;
+}
+
+
+.burgerDiv {  margin-top:50px;
+              background-color: rgb(236, 236, 132);
+              padding: 20px;
+}
+
+.label {  font-weight: bold;
+}
+  
+.create-update-form { padding: 5px;
+                      margin: 5px;
+                      background: aqua;
+}
+
+.formDiv  { margin-top: 20px;
+            background-color:rgb(120, 79, 145);
+            color: white;
+            padding: 20px;
+}
+
+.form-group { margin-bottom: 5px;
+}
+  
+h1 { padding:30px;
+}
+
+img { border-radius: 30px;
+      height: 200px;
+      margin-top: 15px;
+}
+
+.container {  background-color: rgb(125, 248, 125);
+              border-radius:10px;
+}
