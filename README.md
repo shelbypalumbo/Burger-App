@@ -9,14 +9,14 @@ As an avid burger consumer, I want to be able to log the burgers I want to consu
 
 # Usage
 Users of the Burger-App have the ability to add a new burger to the 'Burgers to be devoured' list, as well as move burgers from Burgers to be devoured' to 'Burgers Devoured' and vice versa.
-![Main View](READEME_imgs/main.png)
+![Main View](README_imgs/main.png)
 
 #### Add a burger.
-![Add View](READEME_imgs/add.png)
+![Add View](README_imgs/add.png)
 #### The current list of burgers to be devoured with the new burger added.
-![Devour](READEME_imgs/devour_1.png)
+![Devour](README_imgs/devour_1.png)
 #### The current list of burgers with the Squash burger moved to  'Burgers Devoured'.
-![Devoured](READEME_imgs/devour_2.png)
+![Devoured](README_imgs/devour_2.png)
 
 
 ## Programming Languages Used
