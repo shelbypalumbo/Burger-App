@@ -12,21 +12,20 @@ li {  padding: 5px;
   
 h1 {  background-color: rgba(240, 70, 9, 0.603);
       color: white;
-      padding: 10px;
+      padding: 20px;
       text-shadow: 3px 4px black;
-      padding:30px;
       font-size: 38pt;
 }
 h2 {   text-decoration: underline;
 
 }
 
-.burgerDiv-1 {  margin-top: 30px;
+.burgerDiv-1 {  margin-top: 20px;
                 background-color: rgb(250, 247, 73);
                 padding: 20px;
 }
 
-.burgerDiv-2 {  margin-top:30px;
+.burgerDiv-2 {  margin-top: 20px;
                 background-color: pink;
                 padding: 20px;
 }
@@ -54,7 +53,6 @@ img { height: 150px;
 
 .container {  background-color: rgb(125, 248, 125);
               border-radius: 10px;
-              margin-bottom: 20px;
 }
 
 .create-form {  color:black;
