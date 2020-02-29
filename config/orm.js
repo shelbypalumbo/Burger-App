@@ -55,7 +55,7 @@ var orm = {
         queryString += ") ";
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
-        queryString += ") ";
+        queryString += "); ";
 
     console.log(queryString);
     connection.query(queryString, vals, function(err, result) {
@@ -73,7 +73,7 @@ var orm = {
     queryString += " SET ";
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
-    queryString += condition;
+    queryString += condition + ";";
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
