@@ -24,7 +24,7 @@ function objToSql(ob) {
     var value = ob[key];
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-     if (typeof value === "string" && value.indexOf(" ") >= 0) {//if string has spaces
+      if (typeof value === "string" && value.indexOf(" ") >= 0) {//if string has spaces
         value = "'" + value + "'";
       }
       arr.push(key + "=" + value);
@@ -38,36 +38,36 @@ function objToSql(ob) {
 // Object for all our SQL statement functions.
 //=============ALL=====================================
 var orm = {
-  selectAll: function(tableInput, cb) {
+  selectAll: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       cb(result);
     });
   },
-//=============CREATE===================================
-  insertOne: function(table, cols, vals, cb) {
+  //=============CREATE===================================
+  insertOne: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
-        queryString += " (";
-        queryString += cols.toString();
-        queryString += ") ";
-        queryString += "VALUES (";
-        queryString += printQuestionMarks(vals.length);
-        queryString += "); ";
+    queryString += " (";
+    queryString += cols.toString();
+    queryString += ") ";
+    queryString += "VALUES (";
+    queryString += printQuestionMarks(vals.length);
+    queryString += "); ";
 
     console.log(queryString);
-    connection.query(queryString, vals, function(err, result) {
+    connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
       }
       cb(result);
     });
   },
-//================UPDATE=================================
+  //================UPDATE=================================
   // An example of objColVals would be {name: cheese burger, devoured: true}
-  updateOne: function(table, objColVals, condition, cb) {
+  updateOne: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -76,7 +76,22 @@ var orm = {
     queryString += condition + ";";
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
+  },
+
+  //=============DELETE===================================
+  delete: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -84,7 +99,6 @@ var orm = {
       cb(result);
     });
   }
-
 
 };
 

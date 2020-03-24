@@ -1,29 +1,4 @@
 <div class="row">
-<div class="burgerDiv-1 col-lg-6 col-md-12">
-<h2>Burgers to be Devoured!</h2>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
-
-
-<div class="burgerDiv-2 col-lg-6 col-md-12">
-<h2>Burgers Devoured!</h2>
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-</div>
-
-<div class="row">
   <div class="formDiv col-12">
 
 <h2>Add a Burger</h2>
@@ -36,5 +11,31 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
+</div>
+
+
+<div class="row">
+<div class="burgerDiv-1 polaroid rotate_right col-lg-5 col-md-12">
+<h2>Saved Burgers!</h2>
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devour=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+
+
+<div class="burgerDiv-2 polaroid rotate_left col-lg-5 col-md-12">
+<h2>Burgers Devoured!</h2>
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devour=false}}
+    {{/if}}
+  {{/each}}
+</ul>
 </div>
 </div>

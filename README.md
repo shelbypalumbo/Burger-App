@@ -1,22 +1,22 @@
 # Burger-App
-A burger logging application implementing the use of a MVC design pattern using MySQL, Node, Express, Handlebars and an ORM.
+A burger logging application implementing the use of a MVC design pattern, MySQL, Node, Express, Handlebars and an ORM.
 
 https://whispering-sea-74102.herokuapp.com/
 
 ## User Story
-As an avid burger consumer, I want to be able to log the burgers I want to consume and check them off of my list when I have tried them, so that I can easily keep track of my vast burger resume!
+As an avid burger consumer, I want the ability to log every burger I want to consume and check them off of my list as they are consumed, so that I can easily keep track of my vast burger resume!
 
 
 # Usage
-Users of the Burger-App have the ability to add a new burger to the 'Burgers to be devoured' list, as well as move burgers from Burgers to be devoured' to 'Burgers Devoured' and vice versa.
+Users of the Burger-App have the ability to removed a burger from either list, add a new burger to the "Saved Burgers!" list, as well as move burgers from "Saved Burgers!" to "Burgers Devoured!" and vice versa.
 ![Main View](README_imgs/main.png)
 
 #### Add a burger.
-![Add View](README_imgs/add.png)
-#### The current list of burgers to be devoured with the new burger added.
-![Devour](README_imgs/devour_1.png)
-#### The current list of burgers with the Squash burger moved to  'Burgers Devoured'.
-![Devoured](README_imgs/devour_2.png)
+![Add View](README_imgs/addBurger.png)
+#### The current list of burgers with the salmon burger addition.
+![Devour](README_imgs/savedBurger.png)
+#### The current list of burgers with the salmon burger moved to  'Burgers Devoured'.
+![Devoured](README_imgs/devoured.png)
 
 
 ## Programming Languages Used
