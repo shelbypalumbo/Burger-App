@@ -19,7 +19,7 @@ Users of the Burger-App have the ability to removed a burger from either list, a
 ![Devoured](README_imgs/devoured.png)
 
 
-## Programming Languages Used
+## Technologies Used
 * HTML
 * CSS
 * Javascript
